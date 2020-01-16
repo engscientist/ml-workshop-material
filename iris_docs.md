@@ -20,11 +20,12 @@ Matrix | Data
 
 Here, the iris features can be split into two groups: sepal data and petal data. In each feature group, there are two pieces of data we are interested in, and that is the length and the width of the sepal / petal.
 
-### Sepals of the irises
+### Plot of the length and width of the sepals of the irises
 
+![Plot of the length and width of the iris sepals](https://raw.githubusercontent.com/engscientist/ml-workshop-material/master/iris_sepal_plot.jpg)
 
+### Plot of the length and width of the petals of the irises
 
-###
-
+![Plot of the length and width of the iris petals](https://raw.githubusercontent.com/engscientist/ml-workshop-material/master/iris_petal_plot.jpg)
 
 
