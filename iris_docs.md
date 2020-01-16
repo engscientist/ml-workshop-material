@@ -28,4 +28,8 @@ Here, the iris features can be split into two groups: sepal data and petal data.
 
 ![Plot of the length and width of the iris petals](https://raw.githubusercontent.com/engscientist/ml-workshop-material/master/iris_petal_plot.jpg)
 
+### Insights
+
+From the plots above, it seems that clearly the petals of the iris-setosa is smaller than that of the iris-versicolor and the iris-virginica. This can be used to determine whether a given petal is from the iris-setosa or not.
+
 
