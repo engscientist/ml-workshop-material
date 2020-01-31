@@ -32,4 +32,14 @@ Here, the iris features can be split into two groups: sepal data and petal data.
 
 From the plots above, it seems that clearly the petals of the iris-setosa is smaller than that of the iris-versicolor and the iris-virginica. This can be used to determine whether a given petal is from the iris-setosa or not.
 
+We can see here that typically iris-versicolor petals are generally smaller than iris-virginica petals. However, there is a grey area (the intersection region) between the iris-versicolor and iris-virginica petals.
 
+Here, as an electrical engineer, I am going to abuse the static discipline.
+
+For the model, we will set up a range of values that are considered "the forbidden region". The machine learning algorithm will treat these points as points with an indeterminate result (it can be either iris-versicolor or iris-virginica but there is insufficient evidence to classify these points, according to the model).
+
+The forbidden region is the region where
+- the distance between the point and the versicolor centroid is greater than the distance between the training virginica point closest to the versicolor centroid and the versicolor centroid
+- the distance between the point and the virginica centroid is greater than the distance between the training versicolor point closest to the virginica centroid and the virginica centroid
+
+The train-test file created can be accessed [here](https://github.com/engscientist/ml-workshop-material/blob/master/iris_dataset_traintestmodel1.m).
