@@ -43,3 +43,6 @@ The forbidden region is the region where
 - the distance between the point and the virginica centroid is greater than the distance between the training versicolor point closest to the virginica centroid and the virginica centroid
 
 The train-test file created can be accessed [here](https://github.com/engscientist/ml-workshop-material/blob/master/iris_dataset_traintestmodel1.m).
+
+### Notes
+Note that this is a simple model and there are other models to this problem out there with their strengths and weaknesses.
