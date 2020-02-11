@@ -48,6 +48,10 @@ forbidden_d2 = min(sqrt(sum(((iris_versicolor_train - iris_virginica_centroid).^
 
 % Test model
 % Initialize matrix indicating test result
+% Test results: a test result of 1 indicates that the data point has been
+% correctly identified, a test result of 0 indicates that the data point
+% has been wrongly identified and a test result of -1 indicates that the
+% data point is said to belong to the forbidden region
 test_result = zeros(1,3);
 % Test 1
 test_result(1) = norm(iris_setosa_test - iris_setosa_centroid) < norm(iris_setosa_test - iris_versicolor_centroid);
@@ -56,7 +60,7 @@ if norm(iris_versicolor_test - iris_setosa_centroid) < norm(iris_versicolor_test
 else
     if norm(iris_versicolor_test - iris_versicolor_centroid) > forbidden_d1 && norm(iris_versicolor_test - iris_virginica_centroid) > forbidden_d2
         test_result(2) = -1;
-    elseif norm(iris_versicolor_test - iris_versicolor_centroid)
+    elseif norm(iris_versicolor_test - iris_versicolor_centroid) < norm(iris_versicolor_test - iris_virginica_centroid)
         test_result(2) = 1;
     end
 end
@@ -65,7 +69,7 @@ if norm(iris_virginica_test - iris_setosa_centroid) < norm(iris_virginica_test -
 else
     if norm(iris_virginica_test - iris_versicolor_centroid) > forbidden_d1 && norm(iris_virginica_test - iris_virginica_centroid) > forbidden_d2
         test_result(3) = -1;
-    elseif norm(iris_virginica_test - iris_virginica_centroid)
+    elseif norm(iris_virginica_test - iris_virginica_centroid) < norm(iris_virginica_test - iris_versicolor_centroid)
         test_result(3) = 1;
     end
 end

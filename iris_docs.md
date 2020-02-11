@@ -20,6 +20,8 @@ Matrix | Data
 
 Here, the iris features can be split into two groups: sepal data and petal data. In each feature group, there are two pieces of data we are interested in, and that is the length and the width of the sepal / petal.
 
+The graphs were plotted using the MATLAB script `iris_sepal_plot.m` ([file link here](https://github.com/engscientist/ml-workshop-material/blob/master/iris_sepal_plot.m)).
+
 ### Plot of the length and width of the sepals of the irises
 
 ![Plot of the length and width of the iris sepals](https://raw.githubusercontent.com/engscientist/ml-workshop-material/master/iris_sepal_plot.jpg)
@@ -42,7 +44,7 @@ The forbidden region is the region where
 - the distance between the point and the versicolor centroid is greater than the distance between the training virginica point closest to the versicolor centroid and the versicolor centroid
 - the distance between the point and the virginica centroid is greater than the distance between the training versicolor point closest to the virginica centroid and the virginica centroid
 
-The train-test file created can be accessed [here](https://github.com/engscientist/ml-workshop-material/blob/master/iris_dataset_traintestmodel1.m).
+The train-test file created is `iris_dataset_traintestmodel1.m` and it can be accessed [here](https://github.com/engscientist/ml-workshop-material/blob/master/iris_dataset_traintestmodel1.m).
 
 ### Notes
 Note that this is a simple model and there are other models to this problem out there with their strengths and weaknesses.
