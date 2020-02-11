@@ -8,5 +8,5 @@ Iris dataset (`Iris.xls`) - Saed Sayad
 
 ## Python version
 
-I've decided to include a version of this repository in Python [here]() (file `python-version`). INSERT FILENAME HERE
+I've decided to include a version of this repository in Python [here](https://github.com/engscientist/ml-workshop-material/tree/master/python-version) (file `python-version`).
 
